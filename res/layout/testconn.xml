@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="right"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:text="Phone"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tvNumber1"
+        android:layout_width="146dp"
+        android:layout_height="0dp"
+        android:layout_gravity="left"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:text="Phone #: "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    
+
+    <Button
+        android:id="@+id/bAngles"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Test Angles" />
+
+    <TextView
+        android:id="@+id/tvAng"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="NotSent"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="What are pitch/yaw/roll angles"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    
+
+    <Button
+        android:id="@+id/bResponding"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Test if alive" />
+
+    <TextView
+        android:id="@+id/tvResp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="NotSent"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Is HovaCopt responding?"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</LinearLayout>

@@ -1,0 +1,168 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.google.android.maps.MapView
+        android:id="@+id/mvMain"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:apiKey="0hRIQSo5Yo8P8ZcbghGXWny9DPHeAUHX3bWBBDA"
+        android:clickable="true"
+        android:enabled="true" />
+
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Newheight: 0"
+        android:textSize="20dp"
+        tools:context=".MainActivity" />
+
+    <Button
+        android:id="@+id/bSub"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/tvDisplay"
+        android:layout_below="@+id/tvDisplay"
+        android:layout_marginTop="18dp"
+        android:text="-"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/bsend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="169dp"
+        android:text="Send" />
+
+    <TextView
+        android:id="@+id/tvsent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/bsend"
+        android:text="NotSent"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/tvLat"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Latitude"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/tvLongi"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Longitude"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/bAdd"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bSub"
+        android:layout_alignBottom="@+id/bSub"
+        android:layout_toRightOf="@+id/bSub"
+        android:text="+"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvDisplay"
+        android:layout_alignBottom="@+id/tvDisplay"
+        android:layout_alignLeft="@+id/bAdd"
+        android:layout_marginLeft="16dp"
+        android:text="Current Loc"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bsend"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="51dp"
+        android:layout_marginRight="15dp"
+        android:text="Number not set"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/bnewloc"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bAdd"
+        android:layout_toRightOf="@+id/bAdd"
+        android:text="New Loc" />
+
+    <Button
+        android:id="@+id/bHover"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/bAdd"
+        android:text="Hover" />
+
+    <Button
+        android:id="@+id/bHome"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/bnewloc"
+        android:text="Home" />
+
+    <TextView
+        android:id="@+id/tvLat2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvLongi"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="22dp"
+        android:text="Lat"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/tvLongi2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvLat2"
+        android:layout_alignBottom="@+id/tvLat2"
+        android:layout_alignParentRight="true"
+        android:text="Longi"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/bStop"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="STOP" />
+
+    <TextView
+        android:id="@+id/tvdis"
+        android:layout_width="240dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvsent"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="67dp"
+        android:text="SMSnfo"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>
